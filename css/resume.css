@@ -1,0 +1,122 @@
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: url(../view/timg.jpg) no-repeat center center fixed;
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    overflow: -webkit-paged-x;
+
+
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    background: #2b4e84;
+    color: #fff;
+    width: auto;
+    padding:5px 10px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.resume{
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px #eee;
+    width: 800px;
+    margin:20px auto 40px
+    
+}
+.header{
+	height: 100px;
+}
+/* 个人介绍 */
+.person{
+    overflow: hidden;
+    padding: 20px 40px;
+}
+.person .content{
+    float: left;
+}
+.person .avatar{
+    float: right;
+	width: 120px;
+	height: auto;
+	padding: 0;
+	margin: auto;
+}
+.person .avatar img{
+    width: 100%;
+    height: 100%;
+}
+.person .name{
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.person .info{
+    overflow: hidden;
+    padding: 10px 0;
+}
+.person .info li{
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #ddd;
+}
+.person .info li:last-child{
+    border-right: none;
+}
+/* 教育背景 */
+.education{
+	
+}
+.education .content{
+    padding:  10px 0;
+    margin-left: 40px;
+   
+}
+.education .content li{
+     font-weight: 300;
+     line-height: 24px;
+     font-size: 15px;
+}
+.education .h4{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.education .content .project-desc{
+    margin-left: 40px;
+}
+.education_ba{
+	font-size: 19px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.project-name{
+    color:#2b4e84;
+    font-size: 18px;
+    padding: 5px;
+}
+.three{
+	text-align: left;
+    background-color: #fff;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+
+}
+.education {
+    margin-top: 15px;
+}
+
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../css/resume.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <link rel="shortcut icon" href="free.ico">
+        <title>FREE履历</title>
+    </head>
+      <body>
+        <div id="resume" v-cloak>
+            <div class=" resume">
+               <!-- 个人介绍 -->
+                <section class="person">
+                    <div class="avatar">
+                        <img v-bind:src="img" class="one">
+                    </div>
+                    <div class="content">
+                        <div class="name">
+                            {{name}}
+                        </div>
+                        <div class="info">
+                            <ul >
+                                <li >
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>{{email}} 
+                                </li>
+                                <li >
+                                    <i class="fa fa-phone" aria-hidden="true"></i> {{phone}}
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <ul >
+                                <li >
+                                    {{job}}
+                                </li>
+                                <li >
+                                    工作时长：{{date(jobtimes)}}
+                                </li>
+                                <li >
+                                    {{salaryname}}：{{salarys(salary)}}K
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- 教育背景 -->
+                <section class="education" >
+                    <div class="title">
+                        <span class="education_ba">
+                            <i class="fa fa-address-card-o fa-1" ></i>{{education_ba}}
+                        </span>
+                    </div>
+                    <div class="content">
+                       <ul>
+                            <li class=" three">2017年毕业于江西科技职业学院，计算机网络专业（大专）</li>
+                            <li class=" three" >2 年以上前端开发工作经验</li>
+                       </ul>
+                    </div>
+                </section>
+                <!-- 专业技能 -->
+                <section class="education" >
+                    <div class="title">
+                        <span class="education_ba"><i class="fa fa-tags fa-1" ></i>{{skills}}</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li class="" v-for="date in skills_info">
+                                <span><strong>{{date.name}}:</strong>{{date.language}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                <!-- 项目经历和工作经验 -->
+                <section class="education" >
+                    <div class="title">
+                        <span class="education_ba"><i class="fa fa-users fa-1" ></i>{{project_experience}}</span>
+                    </div>
+                    <div class="content">
+                        <div v-for="date in project_item">
+                            <div class="h4">{{date.project_company}}</div>
+                            <div class=" three"  v-for="date in date.project_info">
+                                <div class="project-name"><strong>{{date.projuct_name}}</strong></div>
+                               
+                                <div class="project-desc">
+                                    <ul v-for="date in date.describe">
+                                        <li>{{date.info}}</li>
+                                    </ul>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+                <!-- 个人项目 -->
+                <section class="education" >
+                    <div class="title">
+                        <span class="user-o education_ba"><i class="fa fa-user-circle-o fa-1" ></i>{{person_product}}</span>
+                    </div>
+                    <div class="content">
+                        <ul>
+                              <li  v-for="date in person_info"><a :href="date.url">{{date.url}}</a>{{date.name}}</li>
+                        </ul>
+                      
+                       
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/vue.js"></script> 
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/react_resune.js"></script>   
+</html>
