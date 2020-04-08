@@ -9,8 +9,6 @@ html, body {
     background-size: cover;
     height: 100%;
     overflow: -webkit-paged-x;
-
-
 }
 ul,li{
     margin: 0;
